@@ -1,55 +1,11 @@
 
 #########################################################################
 #                                                                       #
-#  Simulations in R                                                     #
+#  Simulations                                                    #
 #                                                                       #
 #########################################################################
 
 library(ggplot2)
-
-#  One of the powerful abilities of R is quick computation, which       #
-#  allows users to simulate outcomes and results. Many statistical      #
-#  results are based on the idea of repeated sampling, which is a rare  #
-#  occurrence in real life. However, R gives users the ability to       #
-#  simulate repeated sampling and to view the results.                  #
-
-##################
-#  Random seeds  #
-##################
-
-#  When using any random generating function in R, evaluating the same  #
-#  command multiple times will yield different results. Often, it is    #
-#  important to be able to reproduce results. To generate the same      #
-#  random values each time a command is run, the random generation      #
-#  seed can be set by using the set.seed() function. There is one       #
-#  required input -- the seed. It is common practice to use a relevant  #
-#  value (lucky number, birth date, address, etc.) to protect against   #
-#  searching for an optimal sample.                                     #
-#                                                                       #
-#  Seeds operate in a defined order, so once the seed is set, the next  #
-#  random generation commands will use the next seeds in that order.    #
-#  Thus, setting the seed once at the beginning of a program will give  #
-#  the same random values each time the program is run, but each        #
-#  command within the program will generate different results. To       #
-#  yield the same values each time a random generation command is run,  #
-#  the set.seed() function must be rerun prior to each command.         #
-
-## Without a set seed
-rnorm(10, mean=2.5, sd=0.5)
-rnorm(10, mean=2.5, sd=0.5)
-
-## With a set seed specified once
-set.seed(5)
-rnorm(10, mean=2.5, sd=0.5)
-rnorm(10, mean=2.5, sd=0.5)
-
-set.seed(5)
-rnorm(10, mean=2.5, sd=0.5)
-rnorm(10, mean=2.5, sd=0.5)
-
-## With a set seed specified each time
-set.seed(5)
-rnorm(10, mean=2.5, sd=0.5)
 
 set.seed(5)
 rnorm(10, mean=2.5, sd=0.5)
