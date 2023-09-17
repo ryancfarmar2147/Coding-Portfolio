@@ -1,3 +1,5 @@
+#Data Cleaning Script in R Using SQL plug-in package #
+
 library(tidyverse)
 library(ggplot2)
 library(sqldf)
