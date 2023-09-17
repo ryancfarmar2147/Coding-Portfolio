@@ -1,4 +1,4 @@
-
+## Lesson plan for my data science students ##
 #########################################################################
 #                                                                       #
 #  Graphics in R                                                        #
