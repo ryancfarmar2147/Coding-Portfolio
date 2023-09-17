@@ -1,3 +1,5 @@
+## Time Series Programming Examples#
+
 randomwalk <- function(sigsq,time){
   x <- rep(0,time)
   w <- rnorm(time, sd=sqrt(sigsq))
@@ -7,6 +9,7 @@ randomwalk <- function(sigsq,time){
   x
 }
 
+#Autoregressive process#
 arsim <- function(phis, sigsq, time){
   p <- length(phis) #find the order of our AR
   noise <- rnorm(time+p, sd=sqrt(sigsq))
@@ -20,6 +23,7 @@ arsim <- function(phis, sigsq, time){
   x #return the time series
 }
 
+#Moving average data generation#
 masim<-function(thetas, sigsq, t){
   q<-length(thetas)
   noise<-rnorm(t+q, sd=sqrt(sigsq))
@@ -31,6 +35,7 @@ masim<-function(thetas, sigsq, t){
   x
 }
 
+#Actual Model Formulation based on previous noise and data generation#
 get_x <- function(A,phi,w,t,sigsq){
   x <- array(0,t)
   time <- c(seq(1,t))
