@@ -1,4 +1,4 @@
-#Question 1, setting up the matrices to get estimates
+
 library(astsa)
 gamma0 <- 1382.2
 rho0 <- 1
