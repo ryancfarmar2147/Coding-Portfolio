@@ -1,4 +1,3 @@
-## Time Series Programming Examples#
 
 randomwalk <- function(sigsq,time){
   x <- rep(0,time)
