@@ -1,6 +1,7 @@
-#Anomaly detection script with DBSCAN model#
+#Cluster identification/Noise reduction script with DBSCAN model#
 
 import numpy as np
+import sklearn
 from sklearn.cluster import DBSCAN
 from sklearn import metrics
 from sklearn.datasets import make_blobs
