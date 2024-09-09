@@ -1,4 +1,4 @@
-#Anomaly detection example script with DBSCAN model#
+#Anomaly detection script with DBSCAN model#
 
 import numpy as np
 from sklearn.cluster import DBSCAN
